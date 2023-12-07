@@ -1,1 +1,3 @@
-# skillbridge
+# Сделать банер
+# nav
+# intro
