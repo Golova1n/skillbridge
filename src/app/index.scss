@@ -4,3 +4,205 @@
 
 // local styles:
 @import './styles/index.scss';
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text, 
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.banner {
+    background-color: #FF9500;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 14px 0px;
+    margin: 20px 30px 0;
+    gap: 23px;
+
+}
+
+.banner:hover{
+    background-color: #ffa100;
+}
+
+.navigation{
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+   align-self: stretch;
+   margin: 20px 30px ;
+   padding: 20px 132px 24px 132px
+
+
+
+}
+
+.logo{
+  background-color:#FF9500;
+  padding: 7px;
+  border-radius: 8px;
+  width: 54px;
+  height: 54px;
+  margin-right: 50px;
+}
+
+.navlist{
+  display: flex;
+  gap: 26px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navitem{
+  display: flex;
+  align-items: center;
+  padding: 14px 24px;
+
+}
+
+.navitem:hover{
+  background-color: #F1F1F3;
+
+}
+
+.menu{
+  display: none;
+}
+
+.registration{
+  display: flex;
+}
+
+@media screen and (max-width:767px) {
+  .banner{
+    padding: 10px 16px;
+    width: 100%;
+    margin: 40px 16px 0 16px;
+  }
+  .navlist{
+    display: none;
+    
+  }
+
+  .navigation{
+    margin: 0 16px;
+    padding: 20px 0;
+
+  }
+
+  .button{
+    padding: 12px 20px;
+  }
+
+  .menu{
+    width: 34px;
+    height: 34px;
+    display: block;
+    
+  }
+  
+  
+}
+
+.link{
+  display: block;
+}
+
+.button{
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 14px 34px;
+  
+}
+.secondary{
+  background-color: #FF9500;
+  color:#FFF;
+}
+
+.secondary:hover{
+  background-color: #ffa100
+
+}
+.primary:hover{
+  background-color: grey;
+}
+
+.container{
+  display: flex;
+  gap: 50px;
+}
+ 
+
