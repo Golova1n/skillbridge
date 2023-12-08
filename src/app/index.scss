@@ -10,7 +10,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
@@ -52,7 +51,6 @@ ol[class] {
 
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -71,7 +69,7 @@ select {
 
 a.text:active, /* активная/посещенная ссылка */
 a.text:hover,  /* при наведении */
-a.text, 
+a.text,
 a {
   text-decoration: none;
   color: #666;
@@ -139,17 +137,27 @@ a {
 
 .registration{
   display: flex;
+  align-items: center;
 }
+.button{
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 14px 34px;
 
+}
 @media screen and (max-width:767px) {
   .banner{
     padding: 10px 16px;
-    width: 100%;
     margin: 40px 16px 0 16px;
   }
   .navlist{
     display: none;
-    
+
   }
 
   .navigation{
@@ -163,30 +171,24 @@ a {
   }
 
   .menu{
+    border: none;
+    margin-left: 20px;
+    background: transparent;
     width: 34px;
     height: 34px;
-    display: block;
-    
+    display: flex;
+    justify-content: center;
+
   }
-  
-  
+
+
 }
 
 .link{
   display: block;
 }
 
-.button{
-  border: none;
-  background: transparent;
-  outline: none;
-  cursor: pointer;
-  font-weight: 400;
-  font-size: 18px;
-  border-radius: 8px;
-  padding: 14px 34px;
-  
-}
+
 .secondary{
   background-color: #FF9500;
   color:#FFF;
@@ -204,5 +206,5 @@ a {
   display: flex;
   gap: 50px;
 }
- 
+
 
