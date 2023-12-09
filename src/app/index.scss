@@ -157,39 +157,7 @@ body{
   padding: 14px 34px;
 
 }
-@media screen and (max-width:767px) {
-  .banner{
-    padding: 10px 16px;
-    margin: 40px 16px 0 16px;
-  }
-  .navlist{
-    display: none;
 
-  }
-
-  .navigation{
-    margin: 0 16px;
-    padding: 20px 0;
-
-  }
-
-  .button{
-    padding: 12px 20px;
-  }
-
-  .menu{
-    border: none;
-    margin-left: 20px;
-    background: transparent;
-    width: 34px;
-    height: 34px;
-    display: flex;
-    justify-content: center;
-
-  }
-
-
-}
 
 .link{
   display: block;
@@ -229,7 +197,7 @@ body{
   background-color: var(--white-99, #FCFCFD);
   width: fit-content;
   margin: 0 auto;
-  padding: 14px 20px;
+  padding: 14px 30px;
   position: relative;
   border-radius: 11px;
 }
@@ -282,5 +250,77 @@ body{
   align-items: center;
   justify-content: center;
   padding-top: 60px;
+  gap: 12px;
+
+}
+
+@media screen and (max-width:767px) {
+  .banner{
+    padding: 10px 16px;
+    margin: 40px 16px 0 16px;
+  }
+  .navlist{
+    display: none;
+
+  }
+
+  .navigation{
+    margin: 0 16px;
+    padding: 20px 0;
+
+  }
+
+  .button{
+    padding: 12px 20px;
+  }
+
+  .menu{
+    border: none;
+    margin-left: 20px;
+    background: transparent;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .image-container{
+    left: -10px;
+    top: -20px;
+  }
+
+  .intro{
+    padding: 14px;
+    margin-top: 50px;
+  }
+
+  .slogan{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .one{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 30px;
+  }
+
+  .two{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 40px;
+    
+   }
+
+   .button_control{
+    padding-top: 50px;
+   }
+
 
 }
