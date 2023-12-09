@@ -103,11 +103,9 @@ body{
    justify-content: space-between;
    align-items: center;
    align-self: stretch;
-   margin: 20px 30px ;
-   padding: 20px 132px 24px 132px
-
-
-
+   margin: 20px auto ;
+   padding: 20px 0;
+   width: fit-content;
 }
 
 .logo{
@@ -145,6 +143,7 @@ body{
 .registration{
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 .button{
   border: none;
@@ -180,7 +179,11 @@ body{
 
 }
 .primary:hover{
-  background-color: grey;
+  background-color: rgb(224, 223, 223);
+}
+
+.outline:hover{
+  background-color: rgb(224, 223, 223);
 }
 
 .container{
@@ -249,7 +252,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
+  margin-top: 60px;
   gap: 12px;
 
 }
@@ -319,7 +322,7 @@ body{
    }
 
    .button_control{
-    padding-top: 50px;
+    margin-top: 50px;
    }
 
 
