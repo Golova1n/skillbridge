@@ -257,6 +257,24 @@ body{
 
 }
 
+.partners{
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--white-99, #FCFCFD);
+  border-radius: 8px;
+  width: fit-content;
+  margin: 100px auto 0;
+
+}
+
+.partnerslogo{
+  display: flex;
+  padding: 30px 40px;
+
+}
+
 @media screen and (max-width:767px) {
   .banner{
     padding: 10px 16px;
@@ -325,5 +343,21 @@ body{
     margin-top: 50px;
    }
 
+   .partners{
+    width: calc(100% - 34px);
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 10px;
+    margin: 30px auto;
+
+   }
+
+   .partnerslogo{
+    padding: 20px 30px;
+   }
+   
+   .partners::-webkit-scrollbar{
+    width: 0;
+  }
 
 }
