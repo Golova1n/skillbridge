@@ -1,0 +1,10 @@
+.banner{
+ display: flex;
+ padding: 14px 0px;
+ justify-content: center;
+ align-items: center;
+ gap: 23px;
+ align-self: stretch;
+ border-radius: 8px;
+ background: var(--orange-50, #FF9500);
+}
