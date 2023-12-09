@@ -272,8 +272,14 @@ body{
 .partnerslogo{
   display: flex;
   padding: 30px 40px;
+  border-right: 1px solid#F1F1F3;
+
 
 }
+
+.partnerslogo:last-child{
+  border: none;
+ }
 
 @media screen and (max-width:767px) {
   .banner{
