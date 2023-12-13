@@ -6,12 +6,14 @@
 
 // local styles:
 @import './styles/index.scss';
+
 /* Указываем box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
@@ -57,7 +59,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -69,47 +71,49 @@ select {
   font: inherit;
 }
 
-a.text:active, /* активная/посещенная ссылка */
-a.text:hover,  /* при наведении */
+a.text:active,
+/* активная/посещенная ссылка */
+a.text:hover,
+/* при наведении */
 a.text,
 a {
   text-decoration: none;
   color: #666;
 }
 
-body{
+body {
   background-color: #F7F7F8;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .banner {
-    background-color: #FF9500;
-    color: white;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    padding: 14px 0px;
-    margin: 20px 30px 0;
-    gap: 23px;
-
-}
-
-.banner:hover{
-    background-color: #ffa100;
-}
-
-.navigation{
+  background-color: #FF9500;
+  color: white;
+  border-radius: 8px;
   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   align-self: stretch;
-   margin: 20px auto ;
-   padding: 20px 0;
-   width: fit-content;
+  justify-content: center;
+  padding: 14px 0px;
+  margin: 20px 30px 0;
+  gap: 23px;
+
 }
 
-.logo{
-  background-color:#FF9500;
+.banner:hover {
+  background-color: #ffa100;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  margin: 20px auto;
+  padding: 20px 0;
+  width: fit-content;
+}
+
+.logo {
+  background-color: #FF9500;
   padding: 7px;
   border-radius: 8px;
   width: 54px;
@@ -117,35 +121,36 @@ body{
   margin-right: 50px;
 }
 
-.navlist{
+.navlist {
   display: flex;
   gap: 26px;
   font-size: 18px;
   font-weight: 400;
 }
 
-.navitem{
+.navitem {
   display: flex;
   align-items: center;
   padding: 14px 24px;
 
 }
 
-.navitem:hover{
+.navitem:hover {
   background-color: #F1F1F3;
 
 }
 
-.menu{
+.menu {
   display: none;
 }
 
-.registration{
+.registration {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.button{
+
+.button {
   border: none;
   background: transparent;
   outline: none;
@@ -158,40 +163,40 @@ body{
 }
 
 
-.link{
+.link {
   display: block;
 }
 
-.outline{
+.outline {
   border-radius: 8px;
   border: 1px solid var(--white-95, #F1F1F3);
   background: var(--absolute-white, #FFF);
 }
 
 
-.secondary{
+.secondary {
   background-color: #FF9500;
-  color:#FFF;
+  color: #FFF;
 }
 
-.secondary:hover{
+.secondary:hover {
   background-color: #ffa100
-
 }
-.primary:hover{
+
+.primary:hover {
   background-color: rgb(224, 223, 223);
 }
 
-.outline:hover{
+.outline:hover {
   background-color: rgb(224, 223, 223);
 }
 
-.container{
+.container {
   display: flex;
   gap: 50px;
 }
 
-.intro{
+.intro {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,17 +210,17 @@ body{
   border-radius: 11px;
 }
 
-.unlock{
+.unlock {
   color: #FF9500;
 }
 
-.iconintro{
+.iconintro {
   padding: 14px;
   background-color: #FFF4E5;
   border-radius: 6px;
 }
 
-.image-container{
+.image-container {
   background-image: url("../shared/img/stripes.svg");
   background-repeat: no-repeat;
   width: 39px;
@@ -223,32 +228,32 @@ body{
   position: absolute;
   left: -24px;
   top: -30px;
-  
+
 
 }
 
-.one{
+.one {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 38px;
   font-style: normal;
   font-weight: 500;
-  padding-top: 20px;
+  margin-top: 20px;
 
 }
 
-.two{
+.two {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  padding-top: 10px ;
+  margin-top: 10px;
 }
 
-.button_control{
+.button_control {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,7 +262,7 @@ body{
 
 }
 
-.partners{
+.partners {
   display: flex;
   padding: 30px;
   justify-content: center;
@@ -265,11 +270,20 @@ body{
   background: var(--white-99, #FCFCFD);
   border-radius: 8px;
   width: fit-content;
-  margin: 100px auto 0;
+ 
+}
+
+.partnersWraper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 100px 0 ;
+  
 
 }
 
-.partnerslogo{
+.partnerslogo {
   display: flex;
   padding: 30px 40px;
   border-right: 1px solid#F1F1F3;
@@ -277,31 +291,54 @@ body{
 
 }
 
-.partnerslogo:last-child{
+.partnerslogo:last-child {
   border: none;
- }
+}
+
+.playWraper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin: 100px auto 150px;
+}
+
+.play>img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
 
 @media screen and (max-width:767px) {
-  .banner{
+  .banner {
     padding: 10px 16px;
     margin: 40px 16px 0 16px;
   }
-  .navlist{
+
+  .navlist {
     display: none;
 
   }
 
-  .navigation{
+  .navigation {
     margin: 0 16px;
     padding: 20px 0;
 
   }
 
-  .button{
+  
+
+  
+
+  .button {
     padding: 12px 20px;
+    font-size: 14px;
   }
 
-  .menu{
+  .menu {
     border: none;
     margin-left: 20px;
     background: transparent;
@@ -312,58 +349,73 @@ body{
 
   }
 
-  .image-container{
+  .image-container {
     left: -10px;
     top: -20px;
   }
 
-  .intro{
+  .intro {
     padding: 14px;
     margin-top: 50px;
   }
 
-  .slogan{
+  .slogan {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
   }
 
-  .one{
+  .one {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     text-align: center;
-    margin: 0 30px;
+    margin: 16px 30px 6px;
   }
 
-  .two{
+  .two {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     text-align: center;
     margin: 0 40px;
-    
-   }
 
-   .button_control{
+  }
+
+  .button_control {
     margin-top: 50px;
-   }
+  }
 
-   .partners{
-    width: calc(100% - 34px);
-    justify-content: flex-start;
+  .partnersWraper {
     overflow-x: scroll;
-    padding: 10px;
-    margin: 30px auto;
+    width: 100%;
+    margin-bottom: 0;
+    margin: 30px 16px 30px;
+    
 
-   }
+  }
 
-   .partnerslogo{
+  .partners {
+    width: fit-content;
+    justify-content: flex-start;
+    padding: 10px; 
+  }
+
+  .partnerslogo {
     padding: 20px 30px;
-   }
-   
-   .partners::-webkit-scrollbar{
+  }
+
+  .partnersWraper::-webkit-scrollbar {
     width: 0;
   }
+
+ 
+
+.playWraper{
+  margin: 10px auto 50px;
+  padding: 0 16px;
+}
+
+
 
 }
