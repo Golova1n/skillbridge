@@ -301,6 +301,7 @@ body {
   justify-content: center;
   border-radius: 12px;
   margin: 100px auto 150px;
+  padding: 0 80px;
 }
 
 .play>img{
@@ -309,6 +310,99 @@ body {
 }
 
 
+.benefitsWraper{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  
+  
+
+}
+
+.title{
+  display: flex;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  justify-content: right;
+  align-items: center;
+  width: 30.5%;
+  
+  
+
+}
+
+.description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+  padding-top: 6px;
+}
+
+.description>p{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container-table{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 500px);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  
+  
+  
+
+}
+
+.item-table{
+  display: grid;
+  border-radius: 12px;
+  background: var(--Absolute-White, #FFF);
+  gap: 50px;
+  padding: 50px;
+  
+  
+}
+
+.number-item-table{
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+}
+
+.arrow{
+  border-radius: 8px;
+  border: 1px solid var(--White-95, #F1F1F3);
+  background: var(--White-99, #FCFCFD);
+  padding: 20px;
+}
+
+.button_arrow{
+  text-align: right;
+}
+
+.text-item{
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+
+.text-item>h3{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.text-item>p{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
 
 
 
@@ -416,6 +510,71 @@ body {
   padding: 0 16px;
 }
 
+.title{
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  width: 0;
+  justify-content: start;
 
+}
+.description{
+  gap: 20px;
+  flex-direction: column;
+  align-items: start;
+  
+}
+
+.benefitsWraper{
+  flex-direction: column;
+  margin: 50px 16px 40px;
+}
+
+.container-table{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(6, auto);
+  justify-content: center;
+  margin: 0 16px;
+}
+
+.item-table{
+  border-radius: 10px;
+  gap: 30px;
+  padding: 30px;
+}
+
+.number-item-table{
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.text-item{
+  gap: 10px;
+}
+
+.text-item>h3{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.text-item>p{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.arrow{
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.arrow>img{
+  width: 26px;
+  height: 26px;
+}
 
 }
