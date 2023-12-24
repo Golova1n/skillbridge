@@ -484,6 +484,69 @@ body {
   font-weight: 500;
 }
 
+.container-table-testimonials{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2,auto);
+  gap: 30px;
+  justify-content: center;
+  margin: 80px 0 100px;
+}
+
+.item-table-testimonials{
+  display: grid;
+  border-radius: 12px;
+  border: 1px solid var(--White-95, #F1F1F3);
+  background: var(--Absolute-White, #FFF);
+  justify-content: center;
+  max-width: 783.5px;
+}
+
+.text-item-testimonials{
+  display: flex;
+  padding: 50px;
+
+}
+
+.info-author-Wraper{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.author-story{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.button_fs{
+  display: flex;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--White-95, #F1F1F3);
+  background: var(--White-97, #F7F7F8);
+}
+
+.fs{
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
 @media screen and (max-width:767px) {
   .banner {
     padding: 10px 16px;
