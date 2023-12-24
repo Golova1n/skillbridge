@@ -765,4 +765,47 @@ body {
   font-weight: 500;
 }
 
+.container-table-testimonials{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  margin: 0 16px;
+}
+
+.item-table-testimonials{
+  border-radius: 10px;
+  width: 100% ;
+}
+
+.text-item-testimonials{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 30px;
+}
+
+.info-author-Wraper{
+  padding: 20px 30px;
+}
+
+.author-story{
+  gap: 10px;
+}
+
+
+
+.author{
+  font-size: 16px;
+}
+
+.button_fs{
+  padding: 14px 16px;
+}
+
+.fs{
+  font-size: 14px;
+}
+
 }
