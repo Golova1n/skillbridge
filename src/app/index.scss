@@ -547,6 +547,124 @@ body {
   font-weight: 500;
 }
 
+.tariffs-Wraper{
+    display: flex;
+    justify-content: center;
+    margin: 80px auto 150px;
+}
+
+.tariffs-container{
+    display: flex;
+    border-radius: 12px;
+    background: var(--Absolute-White, #FFF);
+    padding: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.tariffs-item{
+    display: flex;
+    padding: 50px 30px 30px 30px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-99, #FCFCFD);
+}
+
+.tariffs-heading{
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid var(--Orange-90, #FFEACC);
+    background: var(--Orange-97, #FFF9F0);
+    width: 100%;
+    justify-content: center;
+    padding: 12px 22px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.buttoncontainer{
+    display: flex;
+    border-radius: 8px;
+    background: var(--Absolute-White, #FFF);
+    padding: 12px;
+    align-items: center;
+}
+
+.tariffs-cost{
+  display: flex;
+  align-items: baseline;
+  margin: 50px auto;
+}
+
+.price{
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.term{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tariffs-features{
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 14px 14px 0px 0px;
+  border: 1px solid var(--White-95, #F1F1F3);
+  background: var(--Absolute-White, #FFF);
+
+}
+
+.tariffs-features-heading{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.feature{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--White-95, #F1F1F3);
+  padding: 14px;
+}
+
+.features-list{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.feature-marker{
+  padding: 6px;
+  border-radius: 6px;
+  background: var(--Orange-95, #FFF4E5);
+}
+
+.button-tariffs-Wraper{
+  width: 100%;
+}
+
+
+.tariffs{
+  border-radius: 0px 0px 8px 8px;
+  background: var(--Orange-50, #FF9500);
+  width: 100%;
+  color: var(--Absolute-White, #FFF);
+}
+
 @media screen and (max-width:767px) {
   .banner {
     padding: 10px 16px;
@@ -806,6 +924,11 @@ body {
 
 .fs{
   font-size: 14px;
+}
+
+.buttoncontainer{
+  margin-left: 25%;
+ 
 }
 
 }
